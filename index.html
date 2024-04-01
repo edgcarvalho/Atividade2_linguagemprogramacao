@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="form-cadastro" onsubmit="return false">
+        <h1>Cadastro de plantas</h1>
+        <div class="linha">
+            <label class="nome">Nome da planta: </label>
+            <input type="text" name="nome">
+        </div>
+
+        <div class="linha">
+            <label for="">Espécie: </label>
+            <input type="text" name="especie">
+        </div>
+
+        <div class="linha">
+            <label for="">Altura: </label>
+            <input type="number" name="altura">
+        </div>
+        <input type="submit" name="enviar" value="Cadastrar" onclick="salvar()">
+
+    </form>
+</body>
+<script src="js/script.js"></script>
+</html>
