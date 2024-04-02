@@ -1,50 +1,98 @@
-#form-cadastro {
-    width: 50%;
-    background-color: #BFA399;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 150px;
-    box-shadow: 4px 4px 0px #8c694ad0;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #8C5A56;
-    font-weight: bold;
-}
-
-.linha {
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #591202;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.esq-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esq-cadastro>h1 {
+    color: white;
+}
+
+.dir-cadastro {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dir{
+    width: 35vw;
+}
+
+.card-cadastro {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:  #7c1903;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-cadastro>h1 {
+    color: white;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.text-field>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #F2CA80;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field > label {
+    color: white;
     margin-bottom: 10px;
 }
 
-.linha label {
-    flex: 1;
-    max-width: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #8C5A56;
-    font-weight: bold;
-    margin-left: 30px;
-}
-
-.linha input {
-    flex: 1;
-    border: 1px solid #8C694A;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 2px 2px 0px #8c694ad0;
-}
-
-input[type="submit"] {
+.btn-cadastro{
     width: 100%;
+    padding: 16px 0px;
+    border: none;
     border-radius: 10px;
-    border: 1px solid #8C694A;
-    padding: 10px;
-    background-color: #D9C7C1;
-    color: #8C694A;
+    outline: none;
+    cursor: pointer;
+    background: #F2B749;
+    color: brown;
     font-weight: bold;
-    box-shadow: 2px 2px 0px #00000063;
+    font-size: 12pt;
 }
