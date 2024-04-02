@@ -1,33 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
     <title>Document</title>
 </head>
+
 <body>
-    
-    <form id="form-cadastro" onsubmit="return false">
-        <h1>Cadastro de plantas</h1>
-        <div class="linha">
-            <label class="nome">Nome da planta: </label>
-            <input type="text" name="nome">
+    <div class="main-login">
+        <div class="esq-cadastro">
+            <h1> Faça o cadastro <br>de suas plantas</h1>
+            <img src="flor.svg" class="dir">
         </div>
 
-        <div class="linha">
-            <label for="">Espécie: </label>
-            <input type="text" name="especie">
+
+
+        <div class="dir-cadastro">
+            <form id="form-cadastro" onsubmit="return false">
+                <div class="card-cadastro">
+                    <h1>Cadastro</h1>
+                    <div class="text-field">
+
+                        <label for="nome">Nome da planta: </label>
+                        <input type="text" name="nome">
+                    </div>
+                    <div class="text-field">
+                        <label for="especie">Espécie da planta: </label>
+                        <input type="text" name="especie">
+                    </div>
+                    <div class="text-field">
+                        <label for="altura">Altura da planta: </label>
+                        <input type="text" name="altura">
+                    </div>
+
+<br>
+                    <button class="btn-cadastro" onclick="salvar()">Cadastrar</button>
+                </div>
+            </form>
         </div>
 
-        <div class="linha">
-            <label for="">Altura: </label>
-            <input type="number" name="altura">
-        </div>
-        <input type="submit" name="enviar" value="Cadastrar" onclick="salvar()">
-
-    </form>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
+
 </html>
